@@ -1,0 +1,14 @@
+{
+    "orgName": "Apttus",
+    "edition": "Developer",  
+    "features": ["AuthorApex", "CascadeDelete", "API", "DebugApex", "MultiCurrency", "MaxCustomLabels:10", "RecordTypes", "MaxApexCodeSize:10"],
+       "settings": {
+          "lightningExperienceSettings": {
+              "enableS1DesktopEnabled": true
+          },
+          "apexSettings": {
+              "enableDisableParallelApexTesting": true
+          }        
+      }  
+  }
+  
