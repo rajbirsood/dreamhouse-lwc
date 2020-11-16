@@ -1,9 +1,5 @@
 //def call(body) {
-    def pipelineParams= [:]
-    def serviceVersionMap = [:]
-    body.resolveStrategy = Closure.DELEGATE_FIRST
-    body.delegate = pipelineParams
-    body()
+    List<String> CHOICES = [];
 
 	pipeline {
         options {
