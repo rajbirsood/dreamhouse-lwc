@@ -52,7 +52,7 @@ spec:
 
             choice(
                 name: 'PRODUCT', 
-                choices: "DC\nCLM\nCPQ\nZEUS\nECHOSIGN-CLM\nDOCUSIGN-CLM\nCONTENT-CODE\nDOCUSIGN-API\nBILLING\nMEB", 
+                choices: "DREAMHOUSE\nDC\nCLM\nCPQ\nZEUS\nECHOSIGN-CLM\nDOCUSIGN-CLM\nCONTENT-CODE\nDOCUSIGN-API\nBILLING\nMEB", 
                 description: 'Select PRODUCT to be used from dropdown list, Ex: CPQ, ZEUS, CLM, DC, MEB'
             )
             booleanParam(
