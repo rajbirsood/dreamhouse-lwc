@@ -208,7 +208,7 @@ spec:
                 steps {
 	                script{
 
-                        jenkinsFilePath="${pipelineParams.jenkinsFilePath}"
+                     /*   jenkinsFilePath="${pipelineParams.jenkinsFilePath}"
                         (jenkinsFilePath == "") ? jenkinsFilePath="./":""
 
                         copyGlobalLibraryScript(jenkinsFilePath,'sfdx/Makefile')
@@ -218,12 +218,12 @@ spec:
                         copyGlobalLibraryScript(jenkinsFilePath,'sfdx/qa-scratch-def.json')
                         copyGlobalLibraryScript(jenkinsFilePath,'sfdx/server.key')     
                     //  copyGlobalLibraryScript(jenkinsFilePath,'sfdx/sfdx-project.json')
-                                                                    
+                      */                                              
 	                    git_branch="${GIT_BRANCH}" 
                         def workspace = pwd()
 
 						// read Parameters from build.properties from project specific repo
-						buildPropertiesPath= "./build.properties"
+						buildPropertiesPath= "./CICD/build.properties"
                         buildProperties = readProperties file: buildPropertiesPath
 
                         // Dependent_PACKAGES_PATH from where we will install list of dependent packages on scratch org
@@ -241,7 +241,7 @@ spec:
                         teams_NotificationChannel = buildProperties['TEAMS_NOTIFICATION_CHANNEL'] 
 
                         // read Parameters from devopsconfig.properties from Jenkins shared library
-                        devopsconfigPath= "./devopsconfig.properties"
+                        devopsconfigPath= "./CICD/devopsconfig.properties"
 						devopsconfigProperties = readProperties file: devopsconfigPath
                         
 						//sfdx project name 
